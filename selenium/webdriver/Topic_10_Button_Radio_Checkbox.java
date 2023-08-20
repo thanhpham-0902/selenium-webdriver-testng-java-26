@@ -10,7 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_00_Template {
+public class Topic_10_Button_Radio_Checkbox {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -21,12 +21,13 @@ public class Topic_00_Template {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.facebook.com/");
 	}
 
 	@Test
-	public void TC_01_() {
+	public void TC_01_Button() {
+		driver.get("https://www.fahasa.com/customer/account/create");
 		
+		driver.findElement(By.cssSelector("li.popup-login-tab-item")).click();
 	}
 
 	@Test

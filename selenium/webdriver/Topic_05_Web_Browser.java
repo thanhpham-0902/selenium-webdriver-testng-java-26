@@ -59,7 +59,7 @@ public class Topic_05_Web_Browser {
 		//Mở ra 1 Url nào đó
 		driver.get("https://www.facebook.com/");
 		
-		//Trả về URL của page hiện tại
+		//Trả về URL của page hiện tại [.getCurrentUrl()]
 		Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/");
 		
 		//Trả về Source code HTML của page hiện tại
